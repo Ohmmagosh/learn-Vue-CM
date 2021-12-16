@@ -3,8 +3,12 @@ import Home from "../views/Home.vue";
 import learn1 from "../views/learn1.vue";
 import AddReduce from "../views/AddReduce.vue";
 import Message from "../views/message.vue";
-import EventMethod from "../views/EventMethod.vue"
-import DataVariable from "../views/DataVariable.vue"
+import EventMethod from "../views/EventMethod.vue";
+import DataVariable from "../views/DataVariable.vue";
+import DictionaryArray from "../views/DictionaryArray.vue";
+import styleGlobalLocal from "../views/styleGlobalLocal.vue";
+import compute from "../views/compute.vue";
+
 const routes = [
   {
     path: "/",
@@ -35,6 +39,21 @@ const routes = [
     path: "/DataVariable",
     name: "DataVariable",
     component: DataVariable,
+  },
+  {
+    path: "/DictionaryArray",
+    name: "DictionaryArray",
+    component: DictionaryArray,
+  },
+  {
+    path: "/styleGlobalLocal",
+    name: "styleGlobalLocal",
+    component: styleGlobalLocal,
+  },
+  {
+    path: "/compute",
+    name: "compute",
+    component: compute,
   },
 ];
 
