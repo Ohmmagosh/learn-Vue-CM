@@ -6,6 +6,8 @@
       <li><router-link to=learn1>learn1</router-link></li>
       <li><router-link to=AddReduce>AddReduce</router-link></li>
       <li><router-link to=message>message</router-link></li>
+      <li><router-link to=EventMethod>EventMethod</router-link></li>
+      <li><router-link to=DataVariable>Data and Variable</router-link></li>
     </ul>
     
     <router-view class="box"></router-view>
