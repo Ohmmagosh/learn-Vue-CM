@@ -8,6 +8,8 @@ import DataVariable from "../views/DataVariable.vue";
 import DictionaryArray from "../views/DictionaryArray.vue";
 import styleGlobalLocal from "../views/styleGlobalLocal.vue";
 import compute from "../views/compute.vue";
+import Binding from "../views/Binding.vue";
+import inputVmodel from "../views/inputVmodel.vue";
 
 const routes = [
   {
@@ -54,6 +56,16 @@ const routes = [
     path: "/compute",
     name: "compute",
     component: compute,
+  },
+  {
+    path: "/Binding",
+    name: "Binding",
+    component: Binding,
+  },
+  {
+    path: "/inputVmodel",
+    name: "inputVmodel",
+    component: inputVmodel,
   },
 ];
 
