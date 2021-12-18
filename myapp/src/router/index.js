@@ -11,7 +11,8 @@ import compute from "../views/compute.vue";
 import Binding from "../views/Binding.vue";
 import inputVmodel from "../views/inputVmodel.vue";
 import slot  from "../views/slot.vue";
-import Condition from "../views/Condition.vue"
+import Condition from "../views/Condition.vue";
+import Loop from "../views/loop.vue";
 
 const routes = [
   {
@@ -78,6 +79,11 @@ const routes = [
     path: "/Condition",
     name: "Condition",
     component: Condition,
+  },
+  {
+    path: "/Loop",
+    name: "Loop",
+    component: Loop,
   },
 ];
 
