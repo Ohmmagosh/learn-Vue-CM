@@ -15,6 +15,7 @@
             <li><button><router-link to="slot">Slot</router-link></button></li>
             <li><button><router-link to="Condition">Condition</router-link></button></li>
             <li><button><router-link to="Loop">Loop</router-link></button></li>
+            <li><button><router-link to="Lifecyclehook">Lifecyclehook</router-link></button></li>
         </ul>
     </div>
 </template>

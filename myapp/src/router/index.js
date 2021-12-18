@@ -13,6 +13,7 @@ import inputVmodel from "../views/inputVmodel.vue";
 import slot  from "../views/slot.vue";
 import Condition from "../views/Condition.vue";
 import Loop from "../views/loop.vue";
+import Lifecyclehook from "../views/Lifecyclehook.vue";
 
 const routes = [
   {
@@ -84,6 +85,11 @@ const routes = [
     path: "/Loop",
     name: "Loop",
     component: Loop,
+  },
+  {
+    path: "/Lifecyclehook",
+    name: "Lifecyclehook",
+    component: Lifecyclehook,
   },
 ];
 
