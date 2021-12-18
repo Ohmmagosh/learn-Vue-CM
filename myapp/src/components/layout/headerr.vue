@@ -1,5 +1,5 @@
 <template>
-    <div id="headerr">
+    <div id="Header">
         <ul>
             <li><button><router-link to="/">home</router-link></button></li>
             <li><button><router-link to="learn1">learn1</router-link></button></li>
@@ -12,13 +12,15 @@
             <li><button><router-link to="compute">compute</router-link></button></li>
             <li><button><router-link to="Binding">Binding</router-link></button></li>
             <li><button><router-link to="inputVmodel">inputVmodel</router-link></button></li>
+            <li><button><router-link to="slot">Slot</router-link></button></li>
+            <li><button><router-link to="Condition">Condition</router-link></button></li>
         </ul>
     </div>
 </template>
 
 <script>
 export default {
-    name: "headerr"
+    name: "Header"
 }
 </script>
 

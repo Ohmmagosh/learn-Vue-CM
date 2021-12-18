@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>learn : v-model</h1>
-    <headerr/>
+    <Header/>
     <Content/>
     <Footer @onClock="onClock" title="Copyright 2021 by Ohmaaagoc Ltd." color="black"/>
     <div class="clock">{{time}}</div>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import headerr from '@/components/layout/headerr.vue';
+import Header from '@/components/layout/headerr.vue';
 import Footer from './components/layout/footer.vue';
 import Content from './components/layout/content.vue';
 import moment from "moment";
@@ -26,7 +26,7 @@ export default {
     }
   },
   components:{
-    headerr,
+    Header,
     Footer,
     Content
   },

@@ -10,6 +10,8 @@ import styleGlobalLocal from "../views/styleGlobalLocal.vue";
 import compute from "../views/compute.vue";
 import Binding from "../views/Binding.vue";
 import inputVmodel from "../views/inputVmodel.vue";
+import slot  from "../views/slot.vue";
+import Condition from "../views/Condition.vue"
 
 const routes = [
   {
@@ -66,6 +68,16 @@ const routes = [
     path: "/inputVmodel",
     name: "inputVmodel",
     component: inputVmodel,
+  },
+  {
+    path: "/slot",
+    name: "slot",
+    component: slot,
+  },
+  {
+    path: "/Condition",
+    name: "Condition",
+    component: Condition,
   },
 ];
 
