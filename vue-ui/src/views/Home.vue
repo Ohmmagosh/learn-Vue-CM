@@ -73,8 +73,7 @@
 </template>
 
 <script>
-import { mdiEmail } from '@mdi/js';
-import { mdiArrowDownDropCircle } from '@mdi/js';
+import { mdiEmail,mdiArrowDownDropCircle } from '@mdi/js';
 export default {
   name: "home",
   data() {
