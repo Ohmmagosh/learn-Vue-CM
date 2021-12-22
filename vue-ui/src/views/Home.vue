@@ -19,15 +19,70 @@
       
       <h1 class="cyan accent-4 white--text text--darken-4 text-lowercase">Ohmaaagoch lowercase</h1><br>
       <h1 class="cyan accent-4 white--text text--darken-4 text-uppercase">Ohmaaagoch uppercase</h1><br>
-      <h1 class="cyan accent-4 white--text text--darken-4 text-captitalize">Ohmaaagoch capitalize</h1>
-      
+      <h1 class="cyan accent-4 white--text text--darken-4 text-captitalize">Ohmaaagoch capitalize</h1><br>
+      <v-btn class="primary mr-5">Run</v-btn>
+      <v-btn color="pink mr-5" dark>Run</v-btn>
+      <v-btn small depressed color="pink mr-5" dark>Run</v-btn>
+      <v-btn fab depressed color="blue mr-5" dark>Run</v-btn>
+      <v-btn outlined color="red" >Run</v-btn>
+      <v-btn color="red" class="mx-5" dark>
+        <span>Email</span>
+        <v-icon >{{ svgPath }}</v-icon>
+      </v-btn>
+      <v-btn color="pink">
+        <v-icon>{{dropdown }}</v-icon>
+      </v-btn>
+      <v-container>
+        <v-btn color="success" class="hidden-sm-and-up ma-2" >show in sm</v-btn><br>
+        <v-btn color="success" class="hidden-md-and-down ma-2" >show in md</v-btn>
+        
+      </v-container>
+    </v-container>
+    <v-container fluid>
+      <v-row no-gutters>
+        <v-col cols="6">
+          <v-btn outlined block color="success">success 1</v-btn>
+        </v-col>
+        <v-col cols="6">
+          <v-btn outlined block color="success">success 2</v-btn>
+        </v-col>
+        <v-col cols="12">
+          <v-btn outlined block color="success">success 3</v-btn>
+        </v-col>
+        <v-col cols="6" md="4">
+          <v-btn outlined block color="success">success 1</v-btn>
+        </v-col>
+        <v-col cols="6" md="4">
+          <v-btn outlined block color="success">success 2</v-btn>
+        </v-col>
+        <v-col cols="12" sm="12" md="4">
+          <v-btn outlined block color="success">success 3</v-btn>
+        </v-col>
+      </v-row>
+      <!-- flex -->
+      <v-row no-gutters class="justify-start align-content-center" style="height:200px;background-color:green">
+        <v-col cols="2">
+          <v-btn block outlined color="success">text</v-btn>
+        </v-col>
+        <v-col cols="2">
+          <v-btn block outlined color="success">text</v-btn>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
 
 <script>
+import { mdiEmail } from '@mdi/js';
+import { mdiArrowDownDropCircle } from '@mdi/js';
 export default {
   name: "home",
+  data() {
+    return {
+      svgPath: mdiEmail,
+      dropdown: mdiArrowDownDropCircle,
+    }
+  },
 };
 </script>
 
