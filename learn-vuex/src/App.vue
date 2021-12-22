@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="idapp" style="text-align:center;">
+    <h1>App</h1>
+    <h2>{{$store.getters.getCount}}</h2>
+    <hr>
+    <br>
+    <comA/>
+    <hr>
+    <br>
+    <comB/>
+    <hr>
+    <br>
+    
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import comA from "@/components/comA.vue"
+import comB from "@/components/comB.vue"
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: "app",
+  components:{
+    comA,
+    comB,
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
